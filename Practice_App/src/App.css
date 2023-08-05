@@ -1,0 +1,70 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+    --primary-hue: 210;
+    --gray-hue: 240;
+    --color-primary: hsl(var(--primary-hue), 100%, 50%);
+    --color-primary-variant: hsl(var(--primary-hue), 100%, 65%);
+    --color-secondary: #ffb116;
+    --color-gray-100: hsl(var(--gray-hue), 47%, 94%);
+    --color-gray-200: hsl(var(--gray-hue), 26%%, 75%);
+    --color-gray-300: hsl(var(--gray-hue), 24%, 64%);
+    --color-gray-400: hsl(var(--gray-hue), 16%, 41%);
+    --color-gray-500: hsl(var(--gray-hue), 44%, 25%);
+    --color-gray-600: hsl(var(--gray-hue), 48%, 15%);
+
+    --container-width-ig: 80%;
+    --container-width-md: 90%;
+
+    --transition: all 500ms ease;
+}
+
+
+
+/* General styles */
+
+body{ 
+    max-width: 150rem; 
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-gray-200);
+    line-height: 1.5;
+    overflow-x: hidden;
+    background: var(--color-gray-600);
+    width: clamp(320px, 100%, 150rem);
+    margin: 0;
+    padding: 0;
+ }
+
+
+ .App-content{
+  width:var(--container-width-ig);
+  margin-inline: auto;
+ }
+
+
+
+ .h1,h2,h3,h4,h5{
+  line-height: 1.2;
+  color: var(--color-gray-100);
+ }
+
+ .h1{
+  font-size: 3rem;
+ }
+
+  .h2{
+    font-size: 2rem;
+  }
+
+  a {
+    color: var(--color-gray-100);
+  }
+
+
+  img {
+    display: block;
+    object-fit : cover;
+    width: 100%;
+  }
